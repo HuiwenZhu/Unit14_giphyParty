@@ -27,10 +27,11 @@ async function getGiphyByTerm(term) {
   //   src: url,
   // });
   let $newGif = $('<img src =' + url + '>', {
-    class: "img-fluid img-thumbnail"
+    class: "img-fluid image-wrapper w-100 h-50" 
+
   });
   let $newColumn = $('<div>', {
-    class: "col-md-4",
+    class: "col-md-4"
   });
   console.log($newGif);
   $newColumn.append($newGif);
